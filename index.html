@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Baikunth Tools - Free Online Tools</title>
+
+<meta name="description"
+content="Baikunth Tools provides free online calculators, converters, text tools, password generators and useful everyday tools.">
+
+<meta name="keywords"
+content="free online tools, calculator, percentage calculator, age calculator, word counter, password generator, EMI calculator, unit converter">
+
+<meta name="author" content="Baikunth">
+
+<meta property="og:title"
+content="Baikunth Tools - Free Online Tools">
+
+<meta property="og:description"
+content="Free calculators, converters and useful online tools.">
+
+<meta property="og:type" content="website">
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fb;
+    color:#222;
+    transition:.3s;
+}
+
+body.dark{
+    background:#121212;
+    color:#eee;
+}
+
+header{
+    background:#111827;
+    color:white;
+    padding:15px 7%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+}
+
+.controls button{
+    border:0;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-left:5px;
+}
+
+.hero{
+    text-align:center;
+    padding:70px 20px;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    color:white;
+}
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.hero a{
+    display:inline-block;
+    background:white;
+    color:#2563eb;
+    padding:12px 20px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section{
+    padding:50px 7%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:32px;
+}
+
+.search-box{
+    max-width:600px;
+    margin:0 auto 35px;
+}
+
+.search-box input{
+    width:100%;
+    padding:15px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.tools-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.tool{
+    background:white;
+    padding:22px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.dark .tool,
+.dark .about-box{
+    background:#1f1f1f;
+}
+
+.tool h3{
+    margin-bottom:15px;
+    color:#2563eb;
+}
+
+.tool input,
+.tool select,
+.tool textarea{
+    width:100%;
+    padding:10px;
+    margin:6px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.tool button{
+    background:#2563eb;
+    color:white;
+    border:0;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:7px;
+}
+
+.result{
+    margin-top:12px;
+    font-weight:bold;
+    min-height:25px;
+}
+
+textarea{
+    resize:vertical;
+    min-height:100px;
+}
+
+.about-box{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    line-height:1.7;
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.hide{
+    display:none;
+}
+
+@media(max-width:700px){
+
+    header{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    nav{
+        text-align:center;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:5px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+🛠️ Baikunth Tools
+</div>
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#tools">Tools</a>
+
+<a href="#about">About</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+<div class="controls">
+
+<button onclick="setLanguage('en')">
+🇬🇧
+</button>
+
+<button onclick="setLanguage('hi')">
+🇮🇳
+</button>
+
+<button onclick="toggleDark()">
+🌙
+</button>
+
+</div>
+
+</header>
+
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+
+<h1>
+Baikunth Tools 🚀
+</h1>
+
+<p
+data-en="Free online tools for everyday work"
+data-hi="रोज़मर्रा के काम के लिए मुफ्त ऑनलाइन टूल्स">
+
+Free online tools for everyday work
+
+</p>
+
+<a href="#tools">
+Explore Tools
+</a>
+
+</section>
+
+
+<!-- TOOLS -->
+
+<section id="tools">
+
+<h2 class="section-title">
+Free Online Tools
+</h2>
+
+<div class="search-box">
+
+<input
+type="text"
+id="search"
+placeholder="🔍 Search tools..."
+onkeyup="searchTools()">
+
+</div>
+
+
+<div class="tools-grid">
+
+
+<!-- Calculator -->
+
+<div class="tool" data-tool="calculator">
+
+<h3>🔢 Calculator</h3>
+
+<input
+id="calcInput"
+placeholder="Example: 25+10*2">
+
+<button onclick="calculate()">
+Calculate
+</button>
+
+<div class="result" id="calcResult"></div>
+
+</div>
+
+
+<!-- Percentage -->
+
+<div class="tool" data-tool="percentage">
+
+<h3>📊 Percentage</h3>
+
+<input
+id="percentValue"
+type="number"
+placeholder="Value">
+
+<input
+id="percentTotal"
+type="number"
+placeholder="Total">
+
+<button onclick="percentage()">
+Calculate
+</button>
+
+<div class="result" id="percentResult"></div>
+
+</div>
+
+
+<!-- Age -->
+
+<div class="tool" data-tool="age">
+
+<h3>🎂 Age Calculator</h3>
+
+<input
+id="birthDate"
+type="date">
+
+<button onclick="calculateAge()">
+Calculate Age
+</button>
+
+<div class="result" id="ageResult"></div>
+
+</div>
+
+
+<!-- Word Counter -->
+
+<div class="tool" data-tool="word counter">
+
+<h3>📝 Word Counter</h3>
+
+<textarea
+id="textCounter"
+oninput="countWords()"
+placeholder="Type or paste text..."></textarea>
+
+<div class="result" id="wordResult">
+Words: 0 | Characters: 0
+</div>
+
+</div>
+
+
+<!-- Password Generator -->
+
+<div class="tool" data-tool="password generator">
+
+<h3>🔐 Password Generator</h3>
+
+<input
+id="passwordLength"
+type="number"
+value="12"
+min="4"
+max="50">
+
+<button onclick="generatePassword()">
+Generate
+</button>
+
+<button onclick="copyPassword()">
+Copy
+</button>
+
+<div class="result" id="passwordResult"></div>
+
+</div>
+
+
+<!-- Number To Words -->
+
+<div class="tool" data-tool="number to words">
+
+<h3>🔤 Number to Words</h3>
+
+<input
+id="numberWords"
+type="number"
+placeholder="Example: 1250">
+
+<button onclick="numberToWords()">
+Convert
+</button>
+
+<div class="result" id="numberWordsResult"></div>
+
+</div>
+
+
+<!-- Unit Converter -->
+
+<div class="tool" data-tool="unit converter">
+
+<h3>🔄 Unit Converter</h3>
+
+<input
+id="unitValue"
+type="number"
+placeholder="Value">
+
+<select id="unitType">
+
+<option value="kmmi">
+Kilometer → Miles
+</option>
+
+<option value="mft">
+Meter → Feet
+</option>
+
+<option value="kgpound">
+Kg → Pound
+</option>
+
+<option value="cminch">
+Cm → Inch
+</option>
+
+</select>
+
+<button onclick="convertUnit()">
+Convert
+</button>
+
+<div class="result" id="unitResult"></div>
+
+</div>
+
+
+<!-- Simple Interest -->
+
+<div class="tool" data-tool="simple interest">
+
+<h3>💰 Simple Interest</h3>
+
+<input
+id="principal"
+type="number"
+placeholder="Principal">
+
+<input
+id="rate"
+type="number"
+placeholder="Rate %">
+
+<input
+id="years"
+type="number"
+placeholder="Time (years)">
+
+<button onclick="simpleInterest()">
+Calculate
+</button>
+
+<div class="result" id="interestResult"></div>
+
+</div>
+
+
+<!-- EMI -->
+
+<div class="tool" data-tool="emi calculator">
+
+<h3>🏦 EMI Calculator</h3>
+
+<input
+id="loan"
+type="number"
+placeholder="Loan Amount">
+
+<input
+id="emiRate"
+type="number"
+placeholder="Annual Interest %">
+
+<input
+id="months"
+type="number"
+placeholder="Months">
+
+<button onclick="calculateEMI()">
+Calculate
+</button>
+
+<div class="result" id="emiResult"></div>
+
+</div>
+
+
+<!-- Area -->
+
+<div class="tool" data-tool="area calculator">
+
+<h3>📐 Area Calculator</h3>
+
+<select id="shape">
+
+<option value="rectangle">
+Rectangle
+</option>
+
+<option value="square">
+Square
+</option>
+
+<option value="circle">
+Circle
+</option>
+
+<option value="triangle">
+Triangle
+</option>
+
+</select>
+
+<input
+id="side1"
+type="number"
+placeholder="Length / Radius / Base">
+
+<input
+id="side2"
+type="number"
+placeholder="Width / Height">
+
+<button onclick="calculateArea()">
+Calculate
+</button>
+
+<div class="result" id="areaResult"></div>
+
+</div>
+
+
+<!-- Time -->
+
+<div class="tool" data-tool="time calculator">
+
+<h3>⏱️ Time Calculator</h3>
+
+<input
+id="hours1"
+type="number"
+placeholder="Hours">
+
+<input
+id="minutes1"
+type="number"
+placeholder="Minutes">
+
+<button onclick="timeCalculate()">
+Convert to Minutes
+</button>
+
+<div class="result" id="timeResult"></div>
+
+</div>
+
+
+<!-- Date Difference -->
+
+<div class="tool" data-tool="days between dates">
+
+<h3>📅 Days Between Dates</h3>
+
+<input
+id="date1"
+type="date">
+
+<input
+id="date2"
+type="date">
+
+<button onclick="dateDifference()">
+Calculate
+</button>
+
+<div class="result" id="dateResult"></div>
+
+</div>
+
+
+<!-- Case Converter -->
+
+<div class="tool" data-tool="case converter">
+
+<h3>🔠 Case Converter</h3>
+
+<textarea
+id="caseText"
+placeholder="Write text here..."></textarea>
+
+<button onclick="upperCase()">
+UPPERCASE
+</button>
+
+<button onclick="lowerCase()">
+lowercase
+</button>
+
+<button onclick="titleCase()">
+Title Case
+</button>
+
+</div>
+
+
+<!-- Random Number -->
+
+<div class="tool" data-tool="random number">
+
+<h3>🎲 Random Number</h3>
+
+<input
+id="minNumber"
+type="number"
+placeholder="Minimum">
+
+<input
+id="maxNumber"
+type="number"
+placeholder="Maximum">
+
+<button onclick="randomNumber()">
+Generate
+</button>
+
+<div class="result" id="randomResult"></div>
+
+</div>
+
+
+<!-- Discount -->
+
+<div class="tool" data-tool="discount calculator">
+
+<h3>📈 Discount Calculator</h3>
+
+<input
+id="price"
+type="number"
+placeholder="Original Price">
+
+<input
+id="discount"
+type="number"
+placeholder="Discount %">
+
+<button onclick="discountCalculate()">
+Calculate
+</button>
+
+<div class="result" id="discountResult"></div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="section-title">
+About Baikunth Tools
+</h2>
+
+<div class="about-box">
+
+<p>
+Baikunth Tools is a collection of free online tools
+for students, creators and everyday users.
+</p>
+
+<br>
+
+<p>
+Our goal is to make useful tools simple,
+fast and easy to use.
+</p>
+
+<br>
+
+<p>
+हमारा उद्देश्य उपयोगी ऑनलाइन टूल्स को
+आसान और मुफ्त बनाना है।
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">
+Contact
+</h2>
+
+<div class="about-box">
+
+<p>
+📧 Email:
+<a href="mailto:baikunthkr657409@gmail.com">
+   baikunthkr657409@gmail.com 
+</a>
+</p>
+
+<br>
+
+<p>
+If you find a problem or have an idea for
+a new tool, you can contact us.
+</p>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>
+© 2026 Baikunth Tools | Made with ❤️ by Baikunth
+</p>
+
+</footer>
+
+
+<script>
+
+
+/* DARK MODE */
+
+function toggleDark(){
+
+document.body.classList.toggle("dark");
+
+}
+
+
+/* LANGUAGE */
+
+function setLanguage(lang){
+
+document.querySelectorAll("[data-"+lang+"]")
+.forEach(function(el){
+
+el.textContent =
+el.getAttribute("data-"+lang);
+
+});
+
+}
+
+
+/* SEARCH */
+
+function searchTools(){
+
+let search =
+document.getElementById("search")
+.value
+.toLowerCase();
+
+document.querySelectorAll(".tool")
+.forEach(function(tool){
+
+let name =
+tool.dataset.tool.toLowerCase();
+
+if(name.includes(search)){
+
+tool.classList.remove("hide");
+
+}else{
+
+tool.classList.add("hide");
+
+}
+
+});
+
+}
+
+
+/* CALCULATOR */
+
+function calculate(){
+
+let value =
+document.getElementById("calcInput").value;
+
+try{
+
+let result =
+Function("return "+value)();
+
+document.getElementById("calcResult")
+.textContent =
+"Result: "+result;
+
+}catch{
+
+document.getElementById("calcResult")
+.textContent =
+"Invalid calculation";
+
+}
+
+}
+
+
+/* PERCENTAGE */
+
+function percentage(){
+
+let value =
+parseFloat(
+document.getElementById("percentValue").value
+);
+
+let total =
+parseFloat(
+document.getElementById("percentTotal").value
+);
+
+if(total===0){
+
+document.getElementById("percentResult")
+.textContent =
+"Total cannot be 0";
+
+return;
+
+}
+
+let result =
+(value/total)*100;
+
+document.getElementById("percentResult")
+.textContent =
+"Percentage: "+
+result.toFixed(2)+"%";
+
+}
+
+
+/* AGE */
+
+function calculateAge(){
+
+let birth =
+document.getElementById("birthDate").value;
+
+if(!birth)return;
+
+let dob =
+new Date(birth);
+
+let today =
+new Date();
+
+let age =
+today.getFullYear() -
+dob.getFullYear();
+
+let month =
+today.getMonth() -
+dob.getMonth();
+
+if(
+month<0 ||
+(month===0 &&
+today.getDate()<dob.getDate())
+){
+
+age--;
+
+}
+
+document.getElementById("ageResult")
+.textContent =
+"Age: "+age+" years";
+
+}
+
+
+/* WORD COUNTER */
+
+function countWords(){
+
+let text =
+document.getElementById("textCounter")
+.value;
+
+let words =
+text.trim()===""
+?0
+:text.trim().split(/\s+/).length;
+
+document.getElementById("wordResult")
+.textContent =
+"Words: "+
+words+
+" | Characters: "+
+text.length;
+
+}
+
+
+/* PASSWORD */
+
+let generatedPassword="";
+
+
+function generatePassword(){
+
+let length =
+parseInt(
+document.getElementById("passwordLength").value
+);
+
+let chars =
+"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*";
+
+generatedPassword="";
+
+for(
+let i=0;
+i<length;
+i++
+){
+
+generatedPassword +=
+chars.charAt(
+Math.floor(
+Math.random()*chars.length
+)
+);
+
+}
+
+document.getElementById("passwordResult")
+.textContent =
+generatedPassword;
+
+}
+
+
+function copyPassword(){
+
+if(!generatedPassword)return;
+
+navigator.clipboard.writeText(
+generatedPassword
+);
+
+alert("Password copied!");
+
+}
+
+
+/* NUMBER TO WORDS */
+
+function numberToWords(){
+
+let num =
+parseInt(
+document.getElementById("numberWords").value
+);
+
+if(isNaN(num))return;
+
+if(num===0){
+
+document.getElementById("numberWordsResult")
+.textContent="Zero";
+
+return;
+
+}
+
+let ones=[
+"",
+"One",
+"Two",
+"Three",
+"Four",
+"Five",
+"Six",
+"Seven",
+"Eight",
+"Nine"
+];
+
+let teens=[
+"Ten",
+"Eleven",
+"Twelve",
+"Thirteen",
+"Fourteen",
+"Fifteen",
+"Sixteen",
+"Seventeen",
+"Eighteen",
+"Nineteen"
+];
+
+let tens=[
+"",
+"",
+"Twenty",
+"Thirty",
+"Forty",
+"Fifty",
+"Sixty",
+"Seventy",
+"Eighty",
+"Ninety"
+];
+
+
+function convert(n){
+
+if(n<10)
+return ones[n];
+
+if(n<20)
+return teens[n-10];
+
+if(n<100)
+return tens[
+Math.floor(n/10)
+]+" "+
+ones[n%10];
+
+if(n<1000)
+return ones[
+Math.floor(n/100)
+]+" Hundred "+
+convert(n%100);
+
+if(n<1000000)
+return convert(
+Math.floor(n/1000)
+)+" Thousand "+
+convert(n%1000);
+
+if(n<1000000000)
+return convert(
+Math.floor(n/1000000)
+)+" Million "+
+convert(n%1000000);
+
+return "Number too large";
+
+}
+
+document.getElementById(
+"numberWordsResult"
+).textContent =
+convert(num);
+
+}
+
+
+/* UNIT CONVERTER */
+
+function convertUnit(){
+
+let value =
+parseFloat(
+document.getElementById("unitValue").value
+);
+
+let type =
+document.getElementById("unitType").value;
+
+let result;
+
+if(type==="kmmi")
+result=value*0.621371;
+
+if(type==="mft")
+result=value*3.28084;
+
+if(type==="kgpound")
+result=value*2.20462;
+
+if(type==="cminch")
+result=value/2.54;
+
+document.getElementById("unitResult")
+.textContent =
+"Result: "+
+result.toFixed(4);
+
+}
+
+
+/* SIMPLE INTEREST */
+
+function simpleInterest(){
+
+let p =
+parseFloat(
+document.getElementById("principal").value
+);
+
+let r =
+parseFloat(
+document.getElementById("rate").value
+);
+
+let t =
+parseFloat(
+document.getElementById("years").value
+);
+
+let si =
+(p*r*t)/100;
+
+let total =
+p+si;
+
+document.getElementById("interestResult")
+.textContent =
+"Interest: ₹"+
+si.toFixed(2)+
+" | Total: ₹"+
+total.toFixed(2);
+
+}
+
+
+/* EMI */
+
+function calculateEMI(){
+
+let p =
+parseFloat(
+document.getElementById("loan").value
+);
+
+let annual =
+parseFloat(
+document.getElementById("emiRate").value
+);
+
+let n =
+parseFloat(
+document.getElementById("months").value
+);
+
+let r =
+annual/12/100;
+
+let emi;
+
+if(r===0){
+
+emi=p/n;
+
+}else{
+
+emi =
+p*r*Math.pow(1+r,n) /
+(
+Math.pow(1+r,n)-1
+);
+
+}
+
+document.getElementById("emiResult")
+.textContent =
+"Monthly EMI: ₹"+
+emi.toFixed(2);
+
+}
+
+
+/* AREA */
+
+function calculateArea(){
+
+let shape =
+document.getElementById("shape").value;
+
+let a =
+parseFloat(
+document.getElementById("side1").value
+);
+
+let b =
+parseFloat(
+document.getElementById("side2").value
+);
+
+let area=0;
+
+if(shape==="rectangle")
+area=a*b;
+
+if(shape==="square")
+area=a*a;
+
+if(shape==="circle")
+area=Math.PI*a*a;
+
+if(shape==="triangle")
+area=(a*b)/2;
+
+document.getElementById("areaResult")
+.textContent =
+"Area: "+
+area.toFixed(2);
+
+}
+
+
+/* TIME */
+
+function timeCalculate(){
+
+let hours =
+parseFloat(
+document.getElementById("hours1").value
+)||0;
+
+let minutes =
+parseFloat(
+document.getElementById("minutes1").value
+)||0;
+
+let total =
+(hours*60)+minutes;
+
+document.getElementById("timeResult")
+.textContent =
+"Total Minutes: "+
+total;
+
+}
+
+
+/* DATE DIFFERENCE */
+
+function dateDifference(){
+
+let d1 =
+new Date(
+document.getElementById("date1").value
+);
+
+let d2 =
+new Date(
+document.getElementById("date2").value
+);
+
+let difference =
+Math.abs(d2-d1);
+
+let days =
+Math.ceil(
+difference/
+(1000*60*60*24)
+);
+
+document.getElementById("dateResult")
+.textContent =
+"Difference: "+
+days+
+" days";
+
+}
+
+
+/* CASE CONVERTER */
+
+function upperCase(){
+
+let box =
+document.getElementById("caseText");
+
+box.value =
+box.value.toUpperCase();
+
+}
+
+
+function lowerCase(){
+
+let box =
+document.getElementById("caseText");
+
+box.value =
+box.value.toLowerCase();
+
+}
+
+
+function titleCase(){
+
+let box =
+document.getElementById("caseText");
+
+box.value =
+box.value
+.toLowerCase()
+.replace(
+/\b\w/g,
+char=>char.toUpperCase()
+);
+
+}
+
+
+/* RANDOM NUMBER */
+
+function randomNumber(){
+
+let min =
+parseInt(
+document.getElementById("minNumber").value
+);
+
+let max =
+parseInt(
+document.getElementById("maxNumber").value
+);
+
+if(min>max){
+
+[min,max]=
+[max,min];
+
+}
+
+let result =
+Math.floor(
+Math.random()*
+(max-min+1)
+)+min;
+
+document.getElementById("randomResult")
+.textContent =
+"Random Number: "+
+result;
+
+}
+
+
+/* DISCOUNT */
+
+function discountCalculate(){
+
+let price =
+parseFloat(
+document.getElementById("price").value
+);
+
+let discount =
+parseFloat(
+document.getElementById("discount").value
+);
+
+let saved =
+(price*discount)/100;
+
+let finalPrice =
+price-saved;
+
+document.getElementById("discountResult")
+.textContent =
+"Saving: ₹"+
+saved.toFixed(2)+
+" | Final Price: ₹"+
+finalPrice.toFixed(2);
+
+}
+
+</script>
+
+</body>
+</html>
