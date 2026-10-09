@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/sitemap.xml
+Sitemap: https://baikunthkr657409-pixel.github.io/baikunth-tools/sitemap.xml
